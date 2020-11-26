@@ -1,0 +1,223 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+}
+.main img{
+	max-width: 80%;
+}
+.logo{
+	width: 80px;
+	height: 70px;
+}
+.contenedor{
+	width: 100%;
+	margin: auto;
+}
+
+/*----------------estilos de hader--------------------*/
+.header{
+	height: 80px;
+	background:#28B463; /*#333*/
+}
+.header .contenedor{
+	display: flex;
+	justify-content: space-between;
+}
+.logo, .icon-menu{
+	margin: 5px;
+	color: #fff;
+}
+.icon-menu{
+	display: block;
+	width: 40px;
+	height: 40px;
+	font-size: 30px;
+	background: #999;
+	text-align: center;
+	line-height: 45px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.nav{
+	position: absolute;
+	top: 60px;
+	left: -100%;
+	width: 100%;
+	z-index: 100;
+	transition: all 0.5s;
+}
+.menu{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	height: 60px;
+}
+.menu-link{
+	display: block;
+	padding: 15px;
+	background: #28B463; /*rgba(51,51,51,0.9);*/
+	color: #fff;
+	height: 60px;
+	border-bottom: 1px solid #fff;
+}
+.menu-link:hover{
+	background: #fff;
+	color: #000;
+}
+.muestrate{
+	left: 0;
+}
+/*----------------estilos de banner--------------------*/
+.banner img{
+	width: 100%;
+}
+.banner{
+	position: relative;
+}
+.banner .contenedor{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
+/*----------------estilos de info--------------------*/
+.info{
+	background: #28B463;
+	color: #fff;
+	text-align: center;
+	margin-top: -50px;
+}
+.info-img{
+	border-radius: 50%;
+	border: 7px solid #239B56;
+	position: relative;
+}
+.info-txt{
+	text-align: justify;
+	padding: 15px;
+}
+/*----------------estilos de cursos--------------------*/
+.cursos{
+	background: #F39C12;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+.cursos h3{
+	font-size: 30px;
+}
+.cursos .cursos-titulo{
+	font-size: 40px;
+}
+.cursos .cursos-txt{
+	text-align: justify;
+	padding: 15px;
+}
+.cursos-img{
+	border-radius: 50%;
+	border: 7px solid #fff;
+}
+/*----------------estilos de cursos--------------------*/
+.mapa{
+	background: #f0ede5;
+	padding: 15px;
+	text-align: center;
+}
+.mapa h3{
+	font-size: 30px;
+}
+.mapa p{
+	text-align: justify;
+	padding: 15px;
+}
+/*----------------estilos de cursos--------------------*/
+.footer{
+	background: #000;
+	color: #fff;
+	padding: 0;
+	text-align: center;
+}
+.footer img{
+	width: 70px;
+	margin-right: 10px;
+	border: 5px solid #fff;
+	border-radius: 50%;
+}
+/*estilos esponsice*/
+@media(min-width: 480px){
+	.contenedor .banner-titulo{
+		font-size: 44px;
+	}
+	.contenedor .banner-txt{
+		font-size: 25px;
+	}
+	.main img{
+		max-width: 90%;
+	}
+	.info-columna{
+		width: 32%;
+	}
+	.info .contenedor{
+		display: flex;
+		justify-content: space-between;
+	}
+	.cursos .contenedor{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+	.cursos-columna{
+		width: 40%;
+	}
+	.cursos h3{
+		font-size: 32px;
+	}
+}
+
+@media(min-width: 768px){
+	.cursos-columna{
+		width: 24%;
+	}
+}
+
+@media(min-width: 1024px){
+	.nav{
+		position: static;
+		width: auto;
+	}
+	.menu{
+		display: flex;
+	}
+	.icon-menu{
+		display: none;
+	}
+	.menu-link{
+		border: none;
+	}
+	.contenedor .banner-titulo{
+		font-size: 50px;
+	}
+	.contenedor .banner-txt{
+		font-size: 36px;
+	}
+	.contenedor{
+		width: 1000px;
+	}
+}
+@media(min-width: 1280px){
+	.contenedor{
+		width: 1200px;
+	}
+	.contenedor .banner-titulo{
+		font-size: 90px;
+	}
+	.contenedor .banner-txt{
+		font-size: 46px;
+	}
+}
